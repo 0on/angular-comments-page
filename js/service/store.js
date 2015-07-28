@@ -1,0 +1,1 @@
+angular.module("comments.service",[]).factory("LocalStorage",function(){"use strict";var t="comments-local-storage",e={save:function(e){localStorage.setItem(t,JSON.stringify(e))},load:function(){return JSON.parse(localStorage.getItem(t))}};return e});
